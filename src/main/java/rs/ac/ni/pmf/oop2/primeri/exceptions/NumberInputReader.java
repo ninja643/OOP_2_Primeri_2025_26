@@ -11,11 +11,14 @@ public class NumberInputReader {
         boolean success = false;
         do{
             try{
+                int x = 5;
                 System.out.println("Enter an integer: ");
                 number = scanner.nextInt();
+                x++;
                 System.out.println("You've entered: "+ number);
                 success = true;
                 scanner.close();
+                System.out.println(x);
             } catch(final InputMismatchException e) {
                 System.out.println("Please enter an integer.");
                 scanner.nextLine();
